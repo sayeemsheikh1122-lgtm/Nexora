@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXORA — Digital Marketplace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div><div class="glow g1"></div><div class="glow g2"></div>
+<header><div class="wrap nav">
+<a class="logo" href="/"><b><i class="fa-solid fa-bolt"></i></b>NEXORA</a>
+<nav><a href="#home">Home</a><a href="#market">Marketplace</a><a href="#how">How It Works</a><a href="#safety">Safety</a></nav>
+<div class="nav-right"><button class="ghost" id="loginBtn">Login</button><button class="primary" id="signupBtn">Create Account</button><button class="avatar hidden" id="userBtn"></button><button class="hamb" id="hamb"><i class="fa-solid fa-bars"></i></button></div>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="wrap hero-grid"><div>
+<span class="eyebrow"><i class="fa-solid fa-shield-halved"></i> PLATFORM-CONTROLLED MARKETPLACE</span>
+<h1>Buy & Sell <span>Digital Assets</span> with Confidence.</h1>
+<p>Discover gaming assets, creator resources, digital properties and services through a controlled marketplace with verification, internal chat and admin review.</p>
+<div class="search"><i class="fa-solid fa-magnifying-glass"></i><input id="search" placeholder="Search listings..."><button id="searchBtn">Search</button></div>
+<div class="trust"><span><i class="fa-solid fa-shield"></i> Protected workflow</span><span><i class="fa-solid fa-user-check"></i> Verified sellers</span><span><i class="fa-solid fa-headset"></i> Admin support</span></div>
+</div><div class="hero-card"><div class="orb"><i class="fa-solid fa-layer-group"></i></div><div class="hero-card-top"><span>VERIFIED MARKETPLACE</span><i class="fa-solid fa-circle-check"></i></div><h3>Premium Digital Marketplace</h3><p>One platform for listings, deals, chat and moderation.</p><div class="hero-stats"><b>8.5K+<small>Listings</small></b><b>12.8K+<small>Users</small></b><b>25K+<small>Orders</small></b></div></div></div></section>
+
+<section class="stats"><div class="wrap stats-grid"><div><i class="fa-solid fa-store"></i><b id="sListings">—</b><small>Active Listings</small></div><div><i class="fa-solid fa-users"></i><b id="sUsers">—</b><small>Registered Users</small></div><div><i class="fa-solid fa-circle-check"></i><b id="sOrders">—</b><small>Orders</small></div><div><i class="fa-solid fa-shield-halved"></i><b>Admin</b><small>Controlled Deals</small></div></div></section>
+
+<section class="section" id="market"><div class="wrap"><div class="section-head"><div><span>MARKETPLACE</span><h2>Featured Listings</h2></div><button class="primary" id="sellBtn"><i class="fa-solid fa-plus"></i> Sell an Asset</button></div>
+<div class="filters"><button class="filter active" data-cat="All">All</button><button class="filter" data-cat="Gaming">Gaming</button><button class="filter" data-cat="Creator">Creator</button><button class="filter" data-cat="Design">Design</button><button class="filter" data-cat="Services">Services</button><button class="filter" data-cat="Web">Web</button></div>
+<div id="listings" class="cards"></div><div id="empty" class="empty hidden">No listings found.</div></div></section>
+
+<section class="section" id="how"><div class="wrap"><div class="center"><span>WORKFLOW</span><h2>How NEXORA Works</h2><p>Simple steps designed to keep deals on-platform.</p></div><div class="steps">
+<div><em>01</em><i class="fa-solid fa-magnifying-glass"></i><h3>Browse</h3><p>Find a listing and review its public details.</p></div>
+<div><em>02</em><i class="fa-solid fa-cart-shopping"></i><h3>Start Order</h3><p>Create a platform order instead of paying outside.</p></div>
+<div><em>03</em><i class="fa-solid fa-comments"></i><h3>Chat Safely</h3><p>Discuss the transaction inside the platform.</p></div>
+<div><em>04</em><i class="fa-solid fa-user-shield"></i><h3>Admin Review</h3><p>Authorized staff can review disputes and status.</p></div>
+</div></div></section>
+
+<section class="section safety" id="safety"><div class="wrap safety-box"><div><span>SAFETY FIRST</span><h2>Keep the deal inside NEXORA.</h2><p>Chat automatically blocks common off-platform links, phone numbers, emails and contact handles. Admin/agency accounts can moderate the marketplace.</p></div><i class="fa-solid fa-shield-heart"></i></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><a class="logo"><b><i class="fa-solid fa-bolt"></i></b>NEXORA</a><p>Digital marketplace demo. Never collect passwords, OTPs or private account credentials.</p></div><div><b>Marketplace</b><a href="#market">Listings</a><a href="#how">How it works</a></div><div><b>Account</b><a href="#" id="footerLogin">Login</a><a href="#" id="footerSignup">Register</a></div></div></footer>
+
+<div class="modal hidden" id="modal"><div class="modal-box"><button class="close" id="closeModal">×</button><div id="modalContent"></div></div></div>
+<script src="/js/app.js"></script>
+</body></html>
